@@ -1,0 +1,346 @@
+/*
+   Path of Light Yoga Studio
+   Author: Krys
+   Date: 3-31-2023
+
+*/
+
+/*
+-------Body---------
+*/
+
+body  {
+		background-color: #FCFCFF;
+		margin: 0;
+		color: #010A01;
+		font-family: "Times New Roman", "Georgia", serif;
+}
+/* body and everything in body have a blueish white background color, no margin, text color of a blackish green, and fonts that are either Times New Roman, Georgia or in the serif family */
+
+	
+/*
+-------Header and Footer---------
+*/
+header {
+
+	color: #010A01;
+	margin-top: 2em;
+	text-align: center;
+	z-index: 9999;
+	font-size: 200%;
+	margin-bottom: 2em;
+
+}
+/* Makes the header be at the top of the page, sets a space of 2em around the top and bottom, makes text center and the font size 200% bigger. */
+
+header a {
+	text-decoration: none;
+}
+/* Makes the link in the header not have a underline */
+header a:visited {
+  color:#010A01;
+}
+
+header a:link {
+  color:#010A01;
+}
+
+header a:hover {
+  color: #010A01;
+}
+/* All three above collective make sure the text color remains a blackish green */
+footer { text-align:center;
+		font-size:small;
+		font-style: italic;
+		padding: 12px 20px;
+}
+			
+/* Makes footer text smaller, center, and italicized */
+
+
+/*
+-----------Nav---------------
+*/
+
+nav {
+	text-align: center;
+	background-color: #AEC4CB;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 0;
+	width: 100%;
+	height: auto;
+}
+/* Makes text on nav bar center, in a greenish bar with space around it  */
+nav a {
+	text-decoration: none;
+}
+
+/* Makes text on nav bar not underlined*/
+
+nav ul {
+	margin: 0;
+	list-style: none;
+	padding-right:2em;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+/* Shrinks the nav bar to a good size, makes sure there are no bullet points, helps center words and makes font size 1.2em. Also no text decoration from lists used in other pages*/
+nav a:visited {
+  color: #010A01;
+}
+
+nav a:hover {
+  color: #010A01;
+}
+
+nav a:link {
+  color: #010A01;
+}
+/* All three of the above sure that no matter how the nav is interacted with, the text will remain a blackish green */
+
+nav li {
+	padding-left: 2em;
+	display: inline;
+	font-weight: bold;
+}
+/* Makes the text go horizonal and space inbetween the words*/
+
+/* 
+----------Lists----------- 
+*/
+
+ul {
+	list-style: none;
+	font-size: 140%;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: #010A01;
+}
+
+li {
+	padding-bottom: 1em;
+}
+
+/* 
+----------Classes----------- 
+*/
+
+.center {
+		margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+/* makes whatever it is assigned to centered on the page */
+
+.required {
+		color: red;
+		font-weight: bold;
+		text-decoration: underline;
+}
+/* makes whatever it is assigned to red, bold and underlined, speificly made for appointment page */
+
+.pPadding {
+
+	padding: 5em;
+}
+/* makes whatever it is assigned to have a overall padding of 5em, speificly made for reviews page */
+
+/*
+----------IDs----------- 
+*/
+
+#wrapper {
+	
+	padding-left: 10em;
+	padding-right: 10em;
+}
+/* Wraps around body to give box */
+
+
+#gallery { display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: space-around; 
+		   padding-left: 6em;
+}
+/* Keeps img elements in a flex containor that has wrap and keeps space between each emg. Also makes them appear in a row.  */
+
+#reviewLeft {
+	box-shadow: none;
+	float: left;
+	margin-left: .2em;
+}
+/* makes sure photos in class don't have drop shadow, and float left */
+
+#reviewLeft2 {
+	box-shadow: none;
+	float: left;
+	margin-left: .2em;
+}
+/* makes sure photos in class don't have drop shadow, and float left but its now 2 */
+#reviewRight {
+	box-shadow: none;
+	float: right;
+}
+/* makes sure photos in class don't have drop shadow, and float right */
+/*
+----------Form----------- 
+*/
+
+
+
+   form { 
+		display: flex; 
+        flex-flow: column nowrap;
+		min-width: 5em;
+
+}    
+/* Makes single column form */
+   input, datalist textarea { 
+	margin-bottom: .5em; 
+}
+/* gives input and textarea's in the data list element a margin of .5 em on bottom */
+
+label { 
+	text-align: center;
+	margin-bottom: .5em;
+	margin-top: .5em;
+	padding: 12px 20px;
+	font-weight: bold;
+}
+/* Label center aligned, small margins, bold text and overall padding of 12 by 20*/
+
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+textarea {
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+/* Makes input and text area both center aligned with text, have bold font */
+/*
+-----------Table---------------
+*/
+table {
+
+    border: 1px solid #010A01;
+    margin-bottom: 1em;
+    min-width: 400px;
+    border-collapse: collapse;
+   
+}
+/* Sets table to have no border,a min width of 400 pixels, a small bottom margin and a 1 pixel thin solid blackish green border */
+td, th {
+    padding: .5em;
+    border: 1px solid #40407A;
+    /*sets padding and border on both table data (a cell) and table headers*/
+}
+
+tr:nth-of-type(even) {
+    background-color: #D7E8E9;
+    /*makes even rows light green color*/
+}
+
+caption {
+    margin: 2em;
+    font-weight: bold;
+    font-size: 120%;
+}
+    /*lets captions to make bold, and slightly bigger than norm*/
+
+/* 
+----------Misc----------- 
+*/
+
+h2 {
+	margin: .5em;
+	text-align: center;
+	
+}
+/* Sets h2 to have a small margin and a text alignment of center */
+
+
+/* sets all to have border box */
+
+section {
+	padding-left: 3em;
+	padding-right:  3em;
+
+}
+/* Sets section to have padding of 3em */
+p {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* align p text to center and sets auto margins */
+
+img { 
+	margin: .5em;
+    box-shadow: 10px 10px #010A01;
+	  }
+/* adds small margin around photos and a drop shadow */
+
+/* 
+----------Media Queries----------- 
+*/
+
+@media (min-width: 300px) {
+
+	#formShrink {
+	padding-left: 0;
+	padding-right: 0;
+	}
+/* Removes padding to help form fit on smaller windows */
+
+	#wrapper {
+	
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+/* Sets wrapper to 2em */
+	nav li {
+	width: 10em;
+	}
+	/* Sets nav list elements to a width of 10em */
+	h3 {
+	text-align: center;
+	}
+	/* when window is small, h3 will be center aligned */
+	#gallery {  
+		   padding-left: 2em;
+	}
+	/* when window is small, left padding is 2em for the gallery id */
+}
+	
+@media (min-width: 1000px) {
+
+
+	#formShrink {
+	padding-left: 15em;
+	padding-right: 15em;
+	}
+	/* Helps shrink form down as well as keeping it centered, speific for big windows */
+
+	#wrapper {
+		padding-left: 8em;
+		padding-right: 8em;
+	}
+	/* Sets wrapper to 8em */
+	
+	h3 {
+		text-align: left;
+		
+	}
+		/* when window is big, h3 will be left aligned */
+}

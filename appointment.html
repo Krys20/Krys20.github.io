@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Oasis Grooming ~ Appointment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Oasis Grooming
+       Author: Krys
+       Date: 3-31-23-->
+	   	<link rel="stylesheet" href="grooming.css">
+
+</head>
+
+
+<body>
+	<Header><a href="index.html">Oasis Grooming</a></header>
+	<!--Title -->
+<nav><ul><li><a href="index.html">Home</a></li> <li><a href="treatments.html">Treatments</a></li><li><a href="groomers.html">Groomers</a> </li><li><a href="reviews.html">Reviews</a></li><li><a href="appointment.html">Appointment</a></li></ul></nav>
+<!--Nav bar -->
+<div id=wrapper>
+<main> 
+
+            <form method="post" id="formShrink">
+                <label for="myName">* Name:</label>
+                <input type="text" id="myName" required="required">
+                <!--input type sets what type of input-->
+                <label for="myEmail">* E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required">
+                <label for="typeOfPet"> * What kind of animal is the pet you'd like groomed?</label>
+                <input type="text" list="typeOfPet" required="required">
+                <datalist id="typeOfPet">
+                    <option>
+                        Cat
+                    </option>
+                    <option>
+                        Dog
+                    </option>
+                    <option>
+                        Multiple
+                    </option>
+                    <option>
+                        Other
+                    </option>
+                </datalist>
+				 <label for="preferedDay">* What day do you prefer to get your buddy groomed?</label>
+                <input type="text" list="preferedDay" required="required">
+                <datalist id="preferedDay">
+                    <option>
+                        Monday
+                    </option>
+                    <option>
+                        Tuesday
+                    </option>
+                    <option>
+                        Wednesday
+                    </option>
+                    <option>
+                        Thursday
+                    </option>
+					<option>
+                        Friday
+                    </option>
+					<option>
+                        Saturday
+                    </option>
+					<option>
+                        No preference!
+                    </option>
+                </datalist>
+                <label for="mycomments">If you selected other or multiple, please explain here!</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20">
+                </textarea>
+				<hr>
+                <input type="submit" value="Send away~">
+
+            </form>
+			<!--Form for appointment -->
+			<p class="required"> Required fields are marked with an asterisk *. </p>
+
+<footer>
+149 Chuparosa Drive
+Mesa, AZ 85207
+<!--Address -->
+</footer>
+</main>
+</div>
+</body>
